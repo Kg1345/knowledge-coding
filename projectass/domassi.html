@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ASSIGNMENT</title>
+</head>
+
+<!-- Ans 2 nd -->
+<p id="hi"></p>  
+<button onClick = hey()  id = "hi"> Namaste </button>  
+ <button ondblClick = hey1()  id = "hii"> Namaste </button>
+ <button onmouseenter = hey2()  id = "hiii"> Namaste </button>
+ <button onmouseout = hey3()  id = "hiiii"> Namaste </button>
+ <button onkeyup = hey4()  id = "hy"> Namaste </button>
+ <button onkeypress = hey5()  id = "hyy"> Namaste </button>
+ <button onkeydown = hey6()  id = "hyyy"> Namaste </button>  
+
+
+<body>
+    <script>
+       let var1 =  document.getElementById("hi");
+       console.log(var1);
+    //  for click
+    document.addEventListener("click" , hello)
+       function hello(){
+        document.getElementById("hi").innerText  = " namaskaram";
+        document.getElementById("hi").style.backgroundColor = "red";
+       }
+
+       function hey() {
+        document.getElementById("hi").innerText = "namaste1";
+        document.getElementById("hi").style.backgroundColor = "red";
+       }
+
+    
+    //     for dblclick
+       document.addEventListener("dblClick" , hello1)
+       function hello1(){
+        document.getElementById("hii").innerText = "namaste2";
+
+       }
+
+        function hey1() {
+         document.getElementById("hii").innerText = "namaste2";
+        document.getElementById("hii").style.backgroundColor = "yellow";
+       }
+
+        //   for mouseenter
+       document.addEventListener("mouseenter" , hello2)
+       function hello2(){
+        document.getElementById("hiii").innerText = "namaste3";
+       }
+
+
+//     for mouse out
+       document.addEventListener("mouseout" , hello3)
+       function hello3(){
+        document.getElementById("hiiii").innerText = "namasteg";
+       }
+
+
+        //    for keyup
+      document.addEventListener("keyup" , hello4)
+        function hello4(){
+        document.getElementById("hy").innerText = "namaskaramg";
+       }
+
+
+        //   for keypress
+       document.addEventListener("keypress" , hello5)
+       function hello5(){
+        document.getElementById("hyy").innerText = "hows work";
+       }
+
+
+        //    for keydown
+       document.addEventListener("keydown" , hello6)
+       function hello6(){
+        document.getElementById("hyyy").innerText = "very good day";
+       }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
